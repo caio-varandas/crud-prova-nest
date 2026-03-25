@@ -1,4 +1,4 @@
-# WORKSPACE CRUD - NEST + PRISMA + SQLITE
+# WORKSPACE CRUD - NEST + PRISMA + POSTGRE
 
 Guia rápido para usar este projeto na prova.
 
@@ -58,12 +58,12 @@ model Patient {
 }
 ```
 
-4. Rodar migrate
+4. Rodar banco
 ```bash
-npx prisma migrate dev --name nome-da-migracao
+npx prisma migrate dev --name init
 ```
 
-5. Gerar CRUD
+5. Gerar CRUD automático
 ```bash
 nest g resource doctors
 nest g resource patients
@@ -77,6 +77,7 @@ Yes
 ```
 
 6. Usar Prisma no Service
+📄 products.service.ts
 ```bash
 import { PrismaService } from '../prisma/prisma.service';
 constructor(private prisma: PrismaService) {}
