@@ -8,8 +8,8 @@ Guia rápido para usar este projeto na prova.
 1. CLONAR O PROJETO
 
 ```bash
-git clone https://github.com/eduardo-gms/crud-workspace.git
-cd crud-workspace
+git clone https://github.com/caio-varandas/crud-prova-nest.git
+cd crud-prova
 ```
 
 2. INSTALAR DEPENDÊNCIAS
